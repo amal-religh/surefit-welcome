@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Logo from "@/public/logo.png";
 export default function Home() {
   return (
     <main
@@ -13,7 +13,13 @@ export default function Home() {
       }}
     >
       <div className="backdrop-blur-3xl w-full h-full flex flex-col justify-center items-center">
-        <Image src="/logo.png" width="200" height={80} className="mb-3" />
+        <Image
+          src={Logo}
+          width="200"
+          height={80}
+          className="mb-3"
+          unoptimized
+        />
         <h1 className="text-4xl my-2">Get Ready!</h1>
         <p>We are working on something really cool.</p>
       </div>
